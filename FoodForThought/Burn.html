@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FoodForThought - Burned Calories</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Burn.css" />
+    <script>
+        function calc(val) {
+            if (val >= 0) {
+                var n1 = Number(document.getElementById('weight').value);
+                document.getElementById('res').innerHTML = n1 * val;
+            }
+            else {
+                document.getElementById('res').innerHTML = 0;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="home.jpg" style="float:left; height:100px; width:140px" />
+        <img src="home2.jpg" style="float:right; height:100px; width:140px" />
+        <h1>Food For Thought</h1>
+
+    </div>
+
+    <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="FoodInfo.html">Information</a>
+        <a href="BMI.html">BMI Calculator</a>
+        <a href="Burn.html">Burned Calories</a>
+        <a href="Consumed.html">Consumed Calories</a>
+        <a href="Required.html">Required Calories</a>
+        <a href="Home.html" style="float:right">Back</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <img class="img" style="float:right" src="burn.jpg" />
+                <label for="weight">Weight:</label><br>
+                <input type="text" id="weight" value=""><br>
+                <label>Activity:</label><br>
+                <div class="select">
+                    <select id="sel" onclick="calc(value)">
+                        <option selected disabled value=-1>Choose</option>
+                        <option value=4>Cycling</option>
+                        <option value=4>Water Aerobics</option>
+                        <option value=7>Running</option>
+                        <option value=3>Bowling</option>
+                        <option value=7>Football</option>
+                        <option value=4.5>Golf</option>
+                        <option value=4>Gymnastics</option>
+                        <option value=12>Handball</option>
+                        <option value=8>Hockey</option>
+                        <option value=7>Tennis</option>
+                        <option value=8>Beach volleyball</option>
+                        <option value=3>Walking</option>
+                        <option value=6>Swimming</option>
+                    </select>
+                </div>
+                <label for="res">BMI Result:</label>
+                <span id="res"></span><br />
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <a href="Consumed.html"><h3>Consumed Calories</h3></a>
+                <div class="img" style="height:100px;"><img src="consumed.jpg" style="width:70%" /></div>
+                <p>Calculate the calories you consumed today</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FoodForThought - Burned Calories</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Required.css" />
+    <script src="JS/Required.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="home.jpg" style="float:left; height:100px; width:140px" />
+        <img src="home2.jpg" style="float:right; height:100px; width:140px" />
+        <h1>Food For Thought</h1>
+
+    </div>
+
+    <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="FoodInfo.html">Information</a>
+        <a href="BMI.html">BMI Calculator</a>
+        <a href="Burn.html">Burned Calories</a>
+        <a href="Consumed.html">Consumed Calories</a>
+        <a href="Required.html">Required Calories</a>
+        <a href="Home.html" style="float:right">Back</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <img class="img" style="float:right; width:50%" src="required.jpg" />
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" value=""><br>
+                <label for="weight">Weight:</label><br>
+                <input type="text" id="weight" value=""><br>
+                <label for="height">Height:</label><br>
+                <input type="text" id="height" value=""><br>
+                <label>Gender:</label><br>
+                <div class="select">
+                    <select id="sel">
+                        <option selected disabled>Choose</option>
+                        <option value=1>Male</option>
+                        <option value=2>Female</option>
+                    </select>
+                </div>
+                <button onclick="calc()">Calculate</button>
+                <label for="res">BMR Result:</label>
+                <span id="res"></span><br />
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <a href="BMI.html"><h3>BMI Calculator</h3></a>
+                <div class="img" style="height:100px;"><img src="bmi.jpg" style="width:50%" /></div>
+                <p>Calculate your Body Mass Index by using your weight and height</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

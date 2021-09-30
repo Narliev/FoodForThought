@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FoodForThought - BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="CSS/BMI.css" />
+    <script>
+        function calc() {
+            var n1 = Number(document.getElementById('height').value);
+            var n2 = Number(document.getElementById('weight').value);
+            document.getElementById('res').innerHTML = Math.round((n2 / (n1 * n1)) * 1000000) / 100;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="home.jpg" style="float:left; height:100px; width:140px" />
+        <img src="home2.jpg" style="float:right; height:100px; width:140px" />
+        <h1>Food For Thought</h1>
+
+    </div>
+
+    <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="FoodInfo.html">Information</a>
+        <a href="BMI.html">BMI Calculator</a>
+        <a href="Burn.html">Burned Calories</a>
+        <a href="Consumed.html">Consumed Calories</a>
+        <a href="Required.html">Required Calories</a>
+        <a href="Home.html" style="float:right">Back</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <img src="bmi.jpg" style="float:right; width:40%" />
+                <h2>BMI Calculator</h2>
+                <label for="height">Height:</label><br>
+                <input type="number" id="height" value=""><br>
+                <label for="weight">Weight:</label><br>
+                <input type="number" id="weight" value=""><br>
+
+                <button onclick="calc()">Calculate</button>
+                <label for="res">BMI Result:</label>
+                <span id="res"></span><br />
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>BMI Value Meaning:</h3>
+                <p>< 18,5 : Underweight</p>
+                <p>18,5 - 24,9 : Normal</p>
+                <p>25 - 29,9 : Overweight</p>
+                <p>30 - 34,9 : Obese</p>
+                <p>> 35 : Extemly obese</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

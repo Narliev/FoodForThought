@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FoodForThought - Burned Calories</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Consumed.css" />
+    <script src="JS/Consumed.js"></script>
+</head>
+<body onload="clear()">
+    <div class="header">
+        <img src="home.jpg" style="float:left; height:100px; width:140px" />
+        <img src="home2.jpg" style="float:right; height:100px; width:140px" />
+        <h1>Food For Thought</h1>
+
+    </div>
+
+    <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="FoodInfo.html">Information</a>
+        <a href="BMI.html">BMI Calculator</a>
+        <a href="Burn.html">Burned Calories</a>
+        <a href="Consumed.html">Consumed Calories</a>
+        <a href="Required.html">Required Calories</a>
+        <a href="Home.html" style="float:right">Back</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h3>Choose food:</h3>
+                <p class="col1" id="apple1">Apple<button onclick="choose('apple')">Choose</button></p>
+                <p class="col1" id="banana1">Banana<button onclick="choose('banana')">Choose</button></p>
+            </div>
+        </div>
+        <div class="centralcolumn">
+            <div class="card">
+                <h3>Choose amount:</h3>
+                <p class="col2" id="apple2">Apple<input type="number" id="apple" value=""></p>
+                <p class="col2" id="banana2">Banana<input type="number" id="banana" value=""></p>
+                <p><button onclick="calc()">Calculate</button></p>
+                <p><button onclick="location.reload()">Clear</button></p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>Results:</h3>
+                <label for="cal">Calories:</label>
+                <span id="cal"></span><br />
+                <label for="fat">Fats:</label>
+                <span id="fat"></span><br />
+                <label for="pro">Proteins:</label>
+                <span id="pro"></span><br />
+                <label for="car">Carbs:</label>
+                <span id="car"></span><br />
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

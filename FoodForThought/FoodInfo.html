@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FoodForThought - FoodInfo</title>
+    <link rel="stylesheet" type="text/css" href="CSS/FoodInfo.css" />
+    <script src="JS/FoodInfo.js"></script>
+</head>
+<body onload="main('all')">
+    <div class="header">
+        <img src="home.jpg" style="float:left; height:140px; width:140px" />
+        <img src="home2.jpg" style="float:right; height:140px; width:140px" />
+        <h1>Food For Thought</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="FoodInfo.html">Information</a>
+        <a href="BMI.html">BMI Calculator</a>
+        <a href="Burn.html">Burned Calories</a>
+        <a href="Consumed.html">Consumed Calories</a>
+        <a href="Required.html">Required Calories</a>
+        <a href="Home.html" style="float:right">Back</a>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <h2>Different foods</h2>
+            <div class="select">
+                <select id="sel" onclick="main(value)">
+                    <option selected disabled value="all">Choose</option>
+                    <option value="all">all</option>
+                    <option value="fruit">fruit</option>
+                    <option value="vegetable">vegetable</option>
+                    <option value="meat">meat</option>
+                    <option value="nuts">nuts</option>
+                </select>
+            </div>
+            <a class="fruit" href="Food/Apple.html">
+                <img src="Food/apple.jpg" />
+            </a>
+            <a class="fruit" href="Food/Banana.html">
+                <img src="Food/banana.jpg" />
+            </a>
+            <a class="fruit" href="Food/Avocado.html">
+                <img src="Food/avocado.jpg" />
+            </a>
+            <a class="fruit" href="Food/Corn.html">
+                <img src="Food/corn.jpg" />
+            </a>
+            <a class="vegetable" href="Food/Cucumber.html">
+                <img src="Food/cucumber.jpg" />
+            </a>
+            <a class="vegetable" href="Food/Tomato.html">
+                <img src="Food/tomato.jpg" />
+            </a>
+            <a class="vegetable" href="Food/Cabbage.html">
+                <img src="Food/cabbage.jpg" />
+            </a>
+            <a class="vegetable" href="Food/Broccoli.html">
+                <img src="Food/broccoli.jpg" />
+            </a>
+            <a class="meat" href="Food/Lambleg.html">
+                <img src="Food/lambleg.jpg" />
+            </a>
+            <a class="meat" href="Food/Chickenleg.html">
+                <img src="Food/chickenleg.jpg" />
+            </a>
+            <a class="meat" href="Food/Pigmeat.html">
+                <img src="Food/pigmeat.jpg" />
+            </a>
+            <a class="meat" href="Food/Beefmeat.html">
+                <img src="Food/beefmeat.jpg" />
+            </a>
+            <a class="nuts" href="Food/Almonds.html">
+                <img src="Food/almonds.jpg" />
+            </a>
+            <a class="nuts" href="Food/Cashew.html">
+                <img src="Food/Cashew.jpg" />
+            </a>
+            <a class="nuts" href="Food/Hazelnut.html">
+                <img src="Food/hazelnut.jpg" />
+            </a>
+            <a class="nuts" href="Food/Walnuts.html">
+                <img src="Food/walnuts.jpg" />
+            </a>
+            <h4>The values are for 100 grams</h4>
+        </div>
+    </div>
+</body>
+</html>
